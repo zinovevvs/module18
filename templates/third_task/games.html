@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+</head>
+<body>
+    <h1>Магазин</h1>
+        <ul>
+            {% for game in games.Игры %}
+            <li>
+                {{ game.title }} <button disabled>{{ game.button }}</button>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Вернуться на главную страницу</a>
+</body>
+</html>
